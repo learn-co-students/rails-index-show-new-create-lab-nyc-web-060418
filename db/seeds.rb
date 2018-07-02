@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Coupon.destroy_all
+Coupon.create(coupon_code: "QWERTY123456", store: "Vons")
+Coupon.create(coupon_code: "ZXCVB09876", store: "Costco")
